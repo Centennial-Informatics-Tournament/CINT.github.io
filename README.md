@@ -1,1 +1,2 @@
-# CINT.github.io
+# hocohacks
+Website for hocohacks 2020 virtual
