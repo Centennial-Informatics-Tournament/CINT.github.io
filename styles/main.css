@@ -120,7 +120,7 @@ body{
 }
 
 .jumbotron2{
-    background-color: #17202e!important;
+    background-color: #102038!important;
     padding: 3rem 3rem;
 }
 
@@ -201,14 +201,14 @@ body{
     color: white;
     font-size: 20px;
     border: none;
-    background-color: #17202e;
+    background-color: #102038;
 }
 td  {
     padding: 2vh 2vw;
 }
 tr, th, td  {
     border: none;
-    background-color: #17202e;
+    background-color: #102038;
 }
 .table_heading  {
     border-bottom: 2px solid #333333;
