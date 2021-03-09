@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Monserrat', sans-serif;
+    margin: 0;
+    /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
+    /* overflow-x: hidden; */
+}
+ul  {
+    list-style-type: none;
+}
+
+html,body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.background {
+    /* Weird aspect rations ruin this img */
+    font-family: 'Monserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.register-button {
+  background-color: #34495e;
+  border: none;
+  color: white;
+  padding: 18px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.discord-button {
+  background-color: #34495e;
+  border: none;
+  color: white;
+  padding: 18px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button {
+    /* Weird aspect rations ruin this img */
+    font-family: 'Monserrat', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+nav > p {
+    font-size: 3.7vh;
+    right: 4vw;
+    /* Next 5 lines center "HocoHacks" in the nav */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+nav > ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0vh 3vw;
+}
+nav > ul > li {
+    border: 1px solid transparent;
+    border-radius: 1vh;
+    float: left;
+    padding: 1vh 1.2vw;
+    margin: 0;
+}
+nav > ul > li:hover {
+    border-radius: 1.5vh;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+nav > ul > li > a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.navTransparent {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: transparent;
+    color: black;
+}
+.navTransparent > ul > li:hover {
+    border: 1px solid black;
+}
+.navTransparent > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: black;
+    font-size: 1.3rem;
+}
+.navTransparent > p {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: black;
+    font-size: 2rem;
+}
+.navColor {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background-color: #333333;
+}
+.navColor > ul > li:hover {
+    border: 1px solid white;
+}
+.navColor > ul > li > a {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+.navColor > p {
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: white;
+}
+footer {
+    margin: 3vh 2vw;
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+footer > a > img {
+    height: auto;
+    width: 6vh;
+    margin: 0vh 0.2vw;
+}
+.flexbox    {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.flex-img   {
+    width: 70%;
+}
+.flex-info  {
+    width: 75%;
+    color: #333333;
+}
+header {
+    width: 100%;
+    background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/header.png');
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:static;
+}
+.logo-normal {
+    width: 120%;
+    float: right;
+}
+header p {
+    font-size: 5.7vh;
+    color: white;
+}
+
+.main-container {
+    padding-top: 3vh;
+    height: 100vh;
+    width: 70%;
+}
+.main-container li  {
+    padding: 2.3vw;
+}
+/* Copy-pasta from old C10 HAX site */
+.body-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.body-container > div   {
+    padding-bottom: 3.5%;
+}
+.colored   {
+    background-color: #f3f4f3;
+}
+.colored > h1   {
+    color: black;
+}
+h1 {
+    text-align: center;
+    font-size: 5vh;
+    padding-top: 3.5%;
+}
+p {
+    font-size: 2.75vh;
+}
+table {
+    margin: auto;
+    font-size: 1.15vw;
+    border: none;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: .5vw;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.about-content  {
+    width: 95%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+.about-content img  {
+    width: 100%;
+    border-radius: 25px;
+}
+.about-content li   {
+    padding: 2vw;
+}
+.image-box {
+    height: 100%;
+    width: 40%;
+}
+.team {
+    margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    width: 100%;
+    text-align: center;
+}
+.team a:link{
+	color: black;
+}
+.team a:visited{
+	color: black;
+}
+.team > div {
+    width: 20vw;
+    margin: 1vw;
+}
+.team > div > img {
+    border-radius: 50%;
+    height: auto;
+    width: 50%;
+}
+.team > div > h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+.team > div > p {
+    font-size: 1rem;
+    color: black;
+}
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.faq > h1 {
+    width: 100%;
+}
+.faq > div {
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 29%;
+}
+.faq > div > p {
+    font-size: 1.25vw;
+}
+.panel{
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+    font-weight:300;
+}
+.panel a:link{
+	text-decoration: none;
+	color: #333333;
+}
+.panel a:visited{
+	color: #333333;
+}
+.panel a:hover{
+	text-decoration: underline;
+    cursor: pointer;
+}
+.sponsors   {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.sponsors > li {
+    padding: .8vh 1vw;
+    flex-basis: 25%;
+}
+.sponsors a:hover {
+    cursor: pointer;
+}
+.sponsors img:hover {
+    cursor: pointer;
+}
+.sponsors img {
+    height: auto;
+    width: 100%;
+}
+
+.scale-img{
+  height: 70%;
+  width: 70%;
+  padding-left: 7rem;
+}
+
+.schedule   {
+    width: 100%;
+    text-align: center;
+}
+.schedule table {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    text-align: left;
+    color: #333333;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+td  {
+    padding: 2vh 2vw;
+}
+tr, th, td  {
+    border: none;
+    background-color: white;
+}
+.table_heading  {
+    border-bottom: 2px solid #333333;
+    margin: 0 2vw;
+}
+.section-heading {
+    padding-top: 50px;
+    font-size: 400%
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  nav {
+      display: none;
+  }
+   header {
+        width: 100%;
+        background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/header.png');
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:static;
+    }
+     .main-container {
+        padding-top: 3vh;
+        height: 90vh;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .logo-normal    {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+    .flex-img   {
+        width: 40%;
+    }
+    .flex-info  {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+    .main-container p   {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 180%;
+    }
+
+    .faq {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .faq > h1 {
+        width: 100%;
+    }
+    .faq > div {
+        font-size: 4vh;
+        padding: 1vw;
+        width: 75%;
+    }
+    .faq > div > p {
+        font-size: 3vh;
+    }
+
+    .main-container li  {
+        padding: 0px;
+    }
+    header > p {
+        width: 100%;
+        font-size: 5vh;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .body-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    #about {
+        padding: 0% 10% 5%;
+    }
+
+    .register-button {
+      margin-right: 10px;
+    }
+
+
+    .discord-button {
+      margin-left: 10px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 5vh;
+        padding-top: 10%;
+    }
+    p {
+        font-size: 3vh;
+    }
+    .about-img  {
+        width: 100%;
+    }
+    .team   {
+        width: 100%;
+    }
+    .team > div {
+        width: 75%;
+        margin: 1vw;
+    }
+    .sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .sponsors img   {
+        width: 100%;
+    }
+    .scale-img{
+      padding-left: 0;
+    }
+}
+@media only screen and (max-width : 767px){
+    nav {
+        display: none;
+    }
+    header {
+        width: 100%;
+        background: linear-gradient(to top, rgba(235, 237, 235, 0.6), rgba(235, 237, 235, 0.6)), url('../media/header.jpg');
+        background-attachment: fixed;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:static;
+    }
+     .main-container {
+        padding-top: 3vh;
+        height: 90vh;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .logo-normal    {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+    .flex-img   {
+        width: 70%;
+    }
+    .flex-info  {
+        text-align: center;
+        width: 97%;
+        padding: 0px;
+    }
+    .main-container p   {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 180%;
+    }
+    .main-container li  {
+        padding: 0px;
+    }
+    .register-button {
+      margin-right: 6px;
+    }
+
+    .discord-button {
+      margin-left: 0px;
+    }
+    header > p {
+        width: 100%;
+        font-size: 5vh;
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .body-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    #about {
+        padding: 0% 5% 5%;
+    }
+
+    .faq {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .faq > h1 {
+        width: 100%;
+    }
+    .faq > div {
+        font-size: 4vh;
+        padding: 1vw;
+        width: 75%;
+    }
+    .faq > div > p {
+        font-size: 3vh;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 5vh;
+        padding-top: 10%;
+    }
+    p {
+        font-size: 3vh;
+    }
+    .about-img  {
+        width: 100%;
+    }
+    .team   {
+        100%;
+    }
+    .team > div {
+        width: 80%;
+        margin: 1vw;
+    }
+    .sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .sponsors img   {
+        width: 100%;
+    }
+    .scale-img{
+      padding-left: 0;
+    }
+}
