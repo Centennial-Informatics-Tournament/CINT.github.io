@@ -30,9 +30,9 @@ html,body {
 }
 
 .register-button {
-  background-color: #e2c301;
+  background-color: #4a5dfe;
   border: none;
-  color: grey;
+  color: white;
   padding: 18px 36px;
   text-align: center;
   text-decoration: none;
@@ -45,9 +45,9 @@ html,body {
 }
 
 .discord-button {
-  background-color: #e2c301;
+  background-color: #4a5dfe;
   border: none;
-  color: grey;
+  color: white;
   padding: 18px 36px;
   text-align: center;
   text-decoration: none;
@@ -182,8 +182,9 @@ footer > a > img {
 }
 header {
     width: 100%;
-    /* background-color: grey; */
     background: url('../media/background.gif');
+    /* background-color: grey; */
+    /* background: url('../media/background.gif'); */
     /* background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/header.png'); */
     background-attachment: fixed;
     background-position: left bottom;
@@ -191,6 +192,7 @@ header {
     background-size: cover;
     position:static;
 }
+
 .logo-normal {
     width: 120%;
     float: right;
@@ -530,7 +532,7 @@ tr, th, td  {
     }
     header {
         width: 100%;
-        background: linear-gradient(to top, rgba(235, 237, 235, 0.6), rgba(235, 237, 235, 0.6)), url('../media/header.jpg');
+        background: linear-gradient(to top, rgba(235, 237, 235, 0.6), rgba(235, 237, 235, 0.6)), url('../media/background.jpg');
         background-attachment: fixed;
         background-position: left bottom;
         background-repeat: no-repeat;
