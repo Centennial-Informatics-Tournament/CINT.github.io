@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Manjari&display=swap');
 html {
     height: 100%;
 }
 body {
-    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Monserrat', sans-serif; */
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Manjari', sans-serif;
     margin: 0;
     /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
     /* overflow-x: hidden; */
@@ -21,7 +24,9 @@ html,body {
 
 .background {
     /* Weird aspect rations ruin this img */
-    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Monserrat', sans-serif; */
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Manjari', sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -61,7 +66,9 @@ html,body {
 
 .button {
     /* Weird aspect rations ruin this img */
-    font-family: 'Monserrat', sans-serif;
+    /* font-family: 'Monserrat', sans-serif; */
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Manjari', sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -194,6 +201,7 @@ header {
 }
 
 .logo-normal {
+    margin-top: 7.5vh;
     width: 120%;
     float: right;
 }
@@ -411,7 +419,7 @@ tr, th, td  {
   }
    header {
         width: 100%;
-        background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/background.png');
+        background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/background.gif');
         background-attachment: fixed;
         background-position: left bottom;
         background-repeat: no-repeat;
@@ -532,7 +540,7 @@ tr, th, td  {
     }
     header {
         width: 100%;
-        background: linear-gradient(to top, rgba(235, 237, 235, 0.6), rgba(235, 237, 235, 0.6)), url('../media/background.jpg');
+        background: linear-gradient(to top, rgba(235, 237, 235, 0.6), rgba(235, 237, 235, 0.6)), url('../media/background.gif');
         background-attachment: fixed;
         background-position: left bottom;
         background-repeat: no-repeat;
