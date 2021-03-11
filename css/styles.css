@@ -122,42 +122,42 @@ nav > ul > li > a {
     color: black;
 }
 .navTransparent > ul > li:hover {
-    border: 1px solid black;
+    border: 1px solid white;
 }
 .navTransparent > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: black;
+    color: white;
     font-size: 1.3rem;
 }
-.navTransparent > p {
+.navTransparent > p > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: black;
+    color: white;
     font-size: 2rem;
 }
 .navColor {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background-color: #333333;
+    background-color: #eeeeee;
 }
 .navColor > ul > li:hover {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 .navColor > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: white;
+    color: black;
 }
-.navColor > p {
+.navColor > p > a{
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: white;
+    color: black;
 }
 footer {
     margin: 3vh 2vw;
@@ -185,7 +185,9 @@ footer > a > img {
 }
 .flex-info  {
     width: 75%;
-    color: #333333;
+}
+.flex-info p {
+    color: #b0b7c4;
 }
 header {
     width: 100%;
@@ -220,7 +222,6 @@ header p {
 }
 /* Copy-pasta from old C10 HAX site */
 .body-container {
-    background-color: white;
     display: flex;
     flex-direction: column;
 }
@@ -255,6 +256,25 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+.divider {
+  height: 3px;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#252525), to(#252525), color-stop(50%, #ffd156));
+}
+#about {
+  background-color: #252525;
+}
+#schedule {
+  background-color: #353535;
+}
+#faq {
+  background-color: #252525;
+}
+#sponsors {
+  background-color: #353535;
+}
+#team {
+  background-color: #252525;
+}
 .about-content  {
     width: 95%;
     display: flex;
@@ -268,6 +288,9 @@ tr:nth-child(even) {
 }
 .about-content li   {
     padding: 2vw;
+}
+.about h1 {
+  color: #a0a7b4;
 }
 .image-box {
     height: 100%;
@@ -385,30 +408,30 @@ tr:nth-child(even) {
     text-align: center;
 }
 .schedule table {
-    width: 55%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5vh;
     text-align: left;
-    color: #333333;
+    color: #b0b7c4;
     font-size: 20px;
     border: none;
-    background-color: white;
+    background-color: #353535;
 }
 td  {
     padding: 2vh 2vw;
 }
 tr, th, td  {
+    background-color: #353535;
     border: none;
-    background-color: white;
 }
 .table_heading  {
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #b0b7c4;
     margin: 0 2vw;
 }
 .section-heading {
     padding-top: 50px;
-    font-size: 400%
+    font-size: 400%;
 }
 
 
