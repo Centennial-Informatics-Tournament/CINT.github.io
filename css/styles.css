@@ -142,22 +142,22 @@ nav > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background-color: #eeeeee;
+    background-color: #475bfd;
 }
 .navColor > ul > li:hover {
-    border: 1px solid black;
+    border: 1px solid #ed8b3b;
 }
 .navColor > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: black;
+    color: #ffd156;
 }
 .navColor > p > a{
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: black;
+    color: #ffd156;
 }
 footer {
     margin: 3vh 2vw;
@@ -227,6 +227,10 @@ header p {
 }
 .body-container > div   {
     padding-bottom: 3.5%;
+}
+.body-container > div > h1 {
+  font-size: 2.2rem;
+  color: #ed8b3b;
 }
 .colored   {
     background-color: #f3f4f3;
@@ -316,57 +320,89 @@ tr:nth-child(even) {
 	color: black;
 }
 .team > div {
-    width: 20vw;
+    width: 18rem;
     margin: 1vw;
 }
 .team > div > img {
     border-radius: 50%;
-    height: auto;
-    width: 50%;
+    height: 12.5rem;
+    width: 12.5rem;
 }
 .team > div > h2 {
     font-size: 1.5rem;
-    color: black;
+    color: #ffd156;
 }
 .team > div > p {
     font-size: 1rem;
-    color: black;
+    color: #b0b7c4;
 }
-.faq {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
-.faq > h1 {
-    width: 100%;
+
+.row > div {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.faq > div {
-    font-size: 1.5vw;
-    padding: 1vw;
-    width: 29%;
+.row > div > div{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.faq > div > p {
-    font-size: 1.25vw;
+.row button {
+  width: 60%;
+  font-size: 1.25rem;
+  background-color: #ffd156;
+  margin-left: auto;
+  margin-right: auto;
 }
-.panel{
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.2s ease-out;
-    -o-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
-    font-weight:300;
+
+.accordion {
+  color: #252525;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 1rem;
 }
-.panel a:link{
-	text-decoration: none;
-	color: #333333;
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ed8b3b;
 }
-.panel a:visited{
-	color: #333333;
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
-.panel a:hover{
-	text-decoration: underline;
-    cursor: pointer;
+.panel > p {
+  color: #b0b7c4;
+  padding-left: 1rem;
+}
+.panel > p > a {
+  color: #ffd156;
+  text-decoration: none;
+}
+.accordion:after {
+  content: '\27A4';
+  font-size: 1.5rem;
+  color: #475bfd;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25BC";
 }
 .sponsors   {
     display: -webkit-box;
@@ -418,16 +454,18 @@ tr:nth-child(even) {
     border: none;
     background-color: #353535;
 }
-td  {
-    padding: 2vh 2vw;
+
+td {
+  color: #ffd156;
 }
 tr, th, td  {
-    background-color: #353535;
+    padding-top: 1rem;
+    background-color: #353535 !important;
     border: none;
 }
 .table_heading  {
-    border-bottom: 2px solid #b0b7c4;
-    margin: 0 2vw;
+    color: #b0b7c4;
+    border-bottom: 2px solid #ed8b3b;
 }
 .section-heading {
     padding-top: 50px;

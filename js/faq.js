@@ -1,11 +1,11 @@
-var acc = document.getElementsByClassName("accordion"); //Array with all accordion-style opening questions
+var acc = document.getElementsByClassName("accordion");
 var i;
 
-for (i = 0; i < acc.length; i++) {  //Loops through every question to add event listener
+for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active"); //Adds styling when clicked by toggling active class
+    this.classList.toggle("active");
     var panel = this.nextElementSibling;
-  if (panel.style.maxHeight){
+    if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
