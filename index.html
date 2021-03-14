@@ -7,25 +7,28 @@
         <title>CInT</title>
         <link rel="icon" href="media/favicon.ico">
         <link rel="stylesheet" href="css/styles.css">
-                <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+        <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
     </head>
     <body>
         <nav class="navTransparent">
             <ul>
-                <li><a href="#about" style="font-size: 1.5rem;">About</a></li>
-                <li><a href="#schedule" style="font-size: 1.5rem;">Schedule</a></li>
-                <li><a href="#faq" style="font-size: 1.5rem;">FAQ</a></li>
-                <li><a href="#sponsors" style="font-size: 1.5rem;">Sponsors</a></li>
-                <li><a href="#team" style="font-size: 1.5rem;">Our Team</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScALMoBzDuHttM4okWGlLCQBny9hxguZyKBfDKCH4JsiIFV-g/viewform?usp=sf_link" target="_blank" style="font-size: 1.5rem;">Register</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScALMoBzDuHttM4okWGlLCQBny9hxguZyKBfDKCH4JsiIFV-g/viewform?usp=sf_link" target="_blank">Register</a></li>
             </ul>
-            <p><a href="#header" style = "font-size: 2.5rem; text-decoration: none;">CInT 2021</a></p>
+            <a href="#header">CInT 2021</a>
         </nav>
         <header id = "header">
-            <!-- Logo is just a png and does not scale; background removal elementary -->
             <ul class="main-container flexbox">
                 <li class="flex-img"><img src="media/cint_logo.png" class="logo-normal"></li>
-                <li class="flex-info"><p class="head-text" style = "font-size: 2.8rem;"><span style="color:#FFF; font-size: 3.5rem;">April 10th, 2021</span></p><a href="https://docs.google.com/forms/d/e/1FAIpQLScALMoBzDuHttM4okWGlLCQBny9hxguZyKBfDKCH4JsiIFV-g/viewform?usp=sf_link" target="_blank" class="register-button">Register</a><a href="https://discord.gg/jJkFgkKVrc" target="_blank" class="discord-button">Discord</a></li></li>
+                <li class="flex-info">April 10th, 2021<a href="https://docs.google.com/forms/d/e/1FAIpQLScALMoBzDuHttM4okWGlLCQBny9hxguZyKBfDKCH4JsiIFV-g/viewform?usp=sf_link" target="_blank" class="blue-button">Register</a>
+                  <a href="https://discord.gg/jJkFgkKVrc" target="_blank" class="blue-button">Discord</a></li></li>
             </ul>
         </header>
         <div class="body-container">
@@ -34,7 +37,7 @@
                 <ul class="about-content flexbox">
                     <!-- <li class="flex-img about-img"><img src="media/stickers.JPG"></li> -->
                     <li class="flex-info">
-                      <p style = "font-size: 1.4rem;">
+                      <p>
                       CInT, or Centennial Informatics Tournament, gives Middle and High School Students the opportunity to improve, learn, and apply programming skills
                       with 20 algorithm based questions and various tasks or "challenges" related to programming.<br><br>
 
@@ -42,8 +45,8 @@
                       <br>
                       <div class="divider"></div>
                       <br>
-                      <p style="left: 5rem; font-size: 2rem;">Teams</p>
-                      <ul style="list-style-type: circle; color: #b0b7c4; font-size: 1.25rem;">
+                      <p class="subtitle">Teams</p>
+                      <ul>
                         <li>Groups of up to four are allowed, but each student must register individually</li>
                         <li>Teams will be split into a High School division and Middle School division</li>
                         <li>All students will receive the same problems, but winners from each divison will be awarded prizes</li>
@@ -194,24 +197,19 @@
                   </div>
                 </div>
                 <div class="row">
+                  <button class="accordion">How will submissions be graded?</button>
+                  <div class="panel">
+                    <p>We will be using Codeforces to grade submissions. It will certainly be convenient if you made an account beforehand at
+                    <a href="https://codeforces.com/">Codeforces</a>!</p>
+                  </div>
+                </div>
+                <div class="row">
                   <button class="accordion">Why is a question I wanted to ask not answered here?</button>
                   <div class="panel">
                     <p>We are sorry for not being able to answer your question immediately. But, if you have questions that are not mentioned
                      here, please email us at <a href="mailto:chspyoneers@gmail.com">chspyoneers@gmail.com</a>!</p>
                   </div>
                 </div>
-                <!-- <div><b>What is a Hackathon?</b><p>A Hackathon is an event that brings novice and experienced coders together in order to create innovative projects involving code.</p></div>
-                <div><b>Do I need to know how to code?</b><p>No, you don't! Even if you aren't able to code beforehand, you can attend workshops to learn some code, and still submit a project.</p></div>
-                <div><b>Who can attend?</b><p>HocoHacks is open to all middle and high school students. However, anyone is welcome to drop by and see what participants are working on.</p></div>
-                <div><b>What's the team limit and what if I don't have a team?</b><p>No problem! Many participants arrive without a team, and you can meet and work with new people. You can also choose to work alone. The limit is 4 people per team.</p></div>
-                <div><b>What is the topic and what can I make?</b><p>The topic will be revealed on the day of the hackathon (so as to avoid cheating). For your hack, possibilities are websites, mobile or desktop apps, or even hardware projects. </p></div>
-                <div><b>How much does it cost?</b><p>HocoHacks is free for all participants! You can visit excitign workshopws and have the opportuntiy to get swag (free stuff)!</p></div>
-                <div><b>What do I need?</b><p>You will probably need a laptop!</p></div>
-                <div><b>Can I use past projects?</b><p>Anyone caught working on past projects will be forced to sit in the corner and wear the dunce hat. Don't give yourself an unfair advantage over your fellow competitors.</p></div>
-                <div><b>Will hardware be provided?</b><p>Due to the virtual format, hardware unfortunately won't be provided.</p></div>
-                <div><b>How do I win?</b><p>The judges are looking for original, innovative, and well-functioning projects. Bonus points for a project with real-world application!</p></div>
-                <div><b>Is there a code of conduct?</b><p>All normal Howard County school rules apply.</p></div>
-                <div><b>More Questions?</b><p>Feel free to contact us at hocohacks1@gmail.com!</p></div> -->
             </div>
 
             <div id="sponsors" class="sponsors-container colored">
@@ -226,22 +224,15 @@
                     <li><a href="#" target="_blank"><div class="scale-img"><img src="media/sponsors/no-starch-foundation.png"></div></a></li>
                 </ul> -->
             </div>
-            <!-- Sean Chun
-            Andy Diep
-            Keshav Ganapathy
-            David Huang
-            Eric Huang
-            Daniel Kim
-            Daeyong Kwon
-            Austin Zou -->
-            <div id="team" class = "colored" style = "font-size: 1.5rem;">
+            <div id="team" class = "colored">
               <h1>Our Team</h1>
               <div class="team">
                 <div>
                   <img src="media/team/Sean.jpg">
                   <h2>Sean Chun</h2>
-                  <p>Sean Chun is the Vice President of CHS Pyoneers, and
-                  likes to play video games, practice the cello, and study STEM related subjects.</p>
+                  <p>Sean Chun is a junior at Centennial Highschool, and enjoys programming in Python and Java. He is the vice president of Pyoneers
+                  and helped create the foundational structure and core activities of the club. He has taught and held mutliple programming classes
+                  for other high schoolers. Outside of school, Sean plays the cello and teachers other middle schoolers. In his freetime, he plays Valorant and likes the play the guitar.</p>
                 </div>
                 <div>
                   <img src="media/team/Andy.jpg">

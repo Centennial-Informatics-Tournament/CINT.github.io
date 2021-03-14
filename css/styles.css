@@ -4,28 +4,17 @@ html {
     height: 100%;
 }
 body {
-    /* font-family: 'Monserrat', sans-serif; */
-    /* font-family: 'Balsamiq Sans', cursive; */
     font-family: 'Manjari', sans-serif;
     margin: 0;
-    /* Gross and dirty way to fix the bug that causes a sliver of pixels to the right (causing horizontal scroll bar to appear) */
-    /* overflow-x: hidden; */
 }
 ul  {
     list-style-type: none;
 }
-
 html,body {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden;
 }
-
 .background {
-    /* Weird aspect rations ruin this img */
-    /* font-family: 'Monserrat', sans-serif; */
-    /* font-family: 'Balsamiq Sans', cursive; */
     font-family: 'Manjari', sans-serif;
     position: fixed;
     bottom: 0;
@@ -33,79 +22,44 @@ html,body {
     width: 100%;
     z-index: -1;
 }
-
-.register-button {
+.blue-button {
   background-color: #4a5dfe;
   border: none;
   color: white;
-  padding: 18px 36px;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
-  margin-right: 20px;
+  font-size: 2rem;
+  margin-right: 1.25rem;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 1.25rem;
 }
-
-.discord-button {
-  background-color: #4a5dfe;
-  border: none;
-  color: white;
-  padding: 18px 36px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
-  margin-left: 20px;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
-.button {
-    /* Weird aspect rations ruin this img */
-    /* font-family: 'Monserrat', sans-serif; */
-    /* font-family: 'Balsamiq Sans', cursive; */
-    font-family: 'Manjari', sans-serif;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
 nav {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
 }
-nav > p {
-    font-size: 3.7vh;
-    right: 4vw;
-    /* Next 5 lines center "HocoHacks" in the nav */
-    margin: 0;
+nav > a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    right: 4.5rem;
     position: absolute;
-    top: 50%;
+    top: 55%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 nav > ul {
     display: inline-block;
     list-style-type: none;
-    padding: 0vh 3vw;
 }
 nav > ul > li {
-    border: 1px solid transparent;
-    border-radius: 1vh;
     float: left;
-    padding: 1vh 1.2vw;
-    margin: 0;
+    padding: 1rem;
 }
 nav > ul > li:hover {
-    border-radius: 1.5vh;
+    border-radius: 1.5rem;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
@@ -119,10 +73,9 @@ nav > ul > li > a {
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     background-color: transparent;
-    color: black;
 }
 .navTransparent > ul > li:hover {
-    border: 1px solid white;
+    border: 0.1rem solid white;
 }
 .navTransparent > ul > li > a {
     -webkit-transition-duration: 0.5s;
@@ -131,36 +84,35 @@ nav > ul > li > a {
     color: white;
     font-size: 1.3rem;
 }
-.navTransparent > p > a {
+.navTransparent > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: white;
-    font-size: 2rem;
+    color: #FFFFFF;
 }
 .navColor {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    background-color: #475bfd;
+    background-color: #252525;
 }
 .navColor > ul > li:hover {
-    border: 1px solid #ed8b3b;
+    border: 0.1rem solid #ffd156;
 }
 .navColor > ul > li > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: #ffd156;
+    color: #b0b7c4;
 }
-.navColor > p > a{
+.navColor > a {
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
-    color: #ffd156;
+    color: #b0b7c4;
 }
 footer {
-    margin: 3vh 2vw;
+    margin: 2rem;
     display: block;
     position: fixed;
     right: 0;
@@ -168,64 +120,57 @@ footer {
 }
 footer > a > img {
     height: auto;
-    width: 6vh;
-    margin: 0vh 0.2vw;
+    width: 6rem;
 }
-.flexbox    {
-    margin: 0px auto;
-    padding: 0px;
+.flexbox {
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     align-content: center;
 }
-.flex-img   {
+.flex-img {
     width: 70%;
 }
-.flex-info  {
+.flex-info {
+  margin-top: 4rem;
     width: 75%;
 }
 .flex-info p {
-    color: #b0b7c4;
+    color: #FFFFFF;
+    font-size: 3.5rem;
 }
 header {
     width: 100%;
     background: url('../media/background.gif');
-    /* background-color: grey; */
-    /* background: url('../media/background.gif'); */
-    /* background: linear-gradient(rgba(235, 237, 235,0.562062324929972), rgba(235, 237, 235,0.562062324929972)), url('../media/header.png'); */
     background-attachment: fixed;
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position:static;
 }
-
 .logo-normal {
-    margin-top: 7.5vh;
+    margin-top: 4.5rem;
     width: 120%;
     float: right;
 }
-header p {
-    font-size: 5.7vh;
+header li {
+    padding: 2rem;
+    font-size: 4rem;
     color: white;
 }
-
 .main-container {
-    padding-top: 3vh;
-    height: 100vh;
+    padding-top: 1.5rem;
+    height: 50rem;
     width: 70%;
 }
-.main-container li  {
-    padding: 2.3vw;
-}
-/* Copy-pasta from old C10 HAX site */
 .body-container {
     display: flex;
     flex-direction: column;
 }
-.body-container > div   {
+.body-container > div {
     padding-bottom: 3.5%;
 }
 .body-container > div > h1 {
@@ -238,30 +183,40 @@ header p {
 .colored > h1   {
     color: black;
 }
+.flex-info > ul {
+  list-style-type: circle;
+  color: #b0b7c4;
+  font-size: 1.25rem;
+}
+.subtitle {
+  left: 5rem;
+  font-size: 2rem;
+}
 h1 {
     text-align: center;
-    font-size: 5vh;
+    font-size: 3rem;
     padding-top: 3.5%;
 }
 p {
-    font-size: 2.75vh;
+    color: #b0b7c4 !important;
+    font-size: 1.5rem !important;
 }
 table {
     margin: auto;
-    font-size: 1.15vw;
+    font-size: 1.5rem;
     border: none;
     width: 100%;
 }
 td, th {
-    border: 1px solid #dddddd;
+    border: 0.1rem solid #dddddd;
     text-align: left;
-    padding: .5vw;
+    padding: .25rem;
 }
 tr:nth-child(even) {
     background-color: #dddddd;
 }
 .divider {
-  height: 3px;
+  height: 0.2rem;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(#252525), to(#252525), color-stop(50%, #ffd156));
 }
 #about {
@@ -284,24 +239,17 @@ tr:nth-child(even) {
     display: flex;
     align-content: center;
     align-items: center;
-    margin: 0px auto;
-}
-.about-content img  {
-    width: 100%;
-    border-radius: 25px;
+    margin: 0 auto;
 }
 .about-content li   {
-    padding: 2vw;
-}
-.about h1 {
-  color: #a0a7b4;
+    padding: 1rem;
 }
 .image-box {
     height: 100%;
     width: 40%;
 }
 .team {
-    margin-top: 6vh;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -333,7 +281,7 @@ tr:nth-child(even) {
     color: #ffd156;
 }
 .team > div > p {
-    font-size: 1rem;
+    font-size: 1.25rem !important;
     color: #b0b7c4;
 }
 
@@ -398,7 +346,6 @@ tr:nth-child(even) {
   font-size: 1.5rem;
   color: #475bfd;
   float: right;
-  margin-left: 5px;
 }
 
 .active:after {
@@ -414,7 +361,7 @@ tr:nth-child(even) {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     width: 100%;
     padding-bottom: 2rem;
 }
@@ -465,11 +412,7 @@ tr, th, td  {
 }
 .table_heading  {
     color: #b0b7c4;
-    border-bottom: 2px solid #ed8b3b;
-}
-.section-heading {
-    padding-top: 50px;
-    font-size: 400%;
+    border-bottom: 0.1rem solid #ed8b3b;
 }
 
 
