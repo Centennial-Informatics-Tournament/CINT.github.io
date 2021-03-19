@@ -416,7 +416,13 @@ tr:nth-child(even) {
   width: auto;
   height: auto;
 }
-
+.platinum-sponsors img {
+  display: block;
+  max-width:75rem;
+  max-height:37.5rem;
+  width: auto;
+  height: auto;
+}
 .scale-img{
   height: 70%;
   width: 70%;
