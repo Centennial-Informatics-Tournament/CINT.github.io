@@ -416,6 +416,13 @@ tr:nth-child(even) {
   width: auto;
   height: auto;
 }
+.gold-sponsors img {
+  display: block;
+  max-width:60rem;
+  max-height:30rem;
+  width: auto;
+  height: auto;
+}
 .platinum-sponsors img {
   display: block;
   max-width:75rem;
@@ -584,6 +591,20 @@ tr, th, td  {
       width: auto;
       height: auto;
     }
+    .gold-sponsors img {
+      display: block;
+      max-width:60rem;
+      max-height:30rem;
+      width: auto;
+      height: auto;
+    }
+    .platinum-sponsors img {
+      display: block;
+      max-width:75rem;
+      max-height:37.5rem;
+      width: auto;
+      height: auto;
+    }
 }
 @media only screen and (max-width : 767px){
     nav {
@@ -713,6 +734,20 @@ tr, th, td  {
       display: block;
       max-width:25rem;
       max-height:12.5rem;
+      width: auto;
+      height: auto;
+    }
+    .gold-sponsors img {
+      display: block;
+      max-width:60rem;
+      max-height:30rem;
+      width: auto;
+      height: auto;
+    }
+    .platinum-sponsors img {
+      display: block;
+      max-width:75rem;
+      max-height:37.5rem;
       width: auto;
       height: auto;
     }
