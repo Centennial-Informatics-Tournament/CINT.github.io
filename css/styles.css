@@ -353,6 +353,13 @@ tr:nth-child(even) {
   background-color: #ed8b3b;
 }
 
+#thankyou-message{
+    color: #b0b7c4;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2rem;
+}
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   background-color: transparent;
@@ -388,7 +395,6 @@ tr:nth-child(even) {
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
     width: 100%;
     padding-bottom: 2rem;
 }
@@ -404,32 +410,58 @@ tr:nth-child(even) {
 }
 .bronze-sponsors img {
   display: block;
-  max-width:12.5rem;
-  max-height:6.25rem;
-  width: auto;
+  width: 50%;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 .silver-sponsors img {
   display: block;
-  max-width:25rem;
-  max-height:12.5rem;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
 .gold-sponsors img {
   display: block;
-  max-width:60rem;
-  max-height:30rem;
-  width: auto;
+  width: 150%;
   height: auto;
+  padding: 0;
+  margin: 0;
 }
+
 .platinum-sponsors img {
-  display: block;
-  max-width:75rem;
-  max-height:37.5rem;
-  width: auto;
-  height: auto;
+    display: block;
+    width: 130%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+.gold-container{
+    justify-content: center;
+    margin: auto;
+    padding-right: 10rem;
 }
+
+.silver-container{
+    justify-content: center;
+    margin: auto;
+    padding-right: 0rem;
+}
+
+.platinum-container{
+    justify-content: center;
+    margin: auto;
+    padding-right: 15rem;
+}
+
+.bronze-container{
+    justify-content: center;
+    margin: auto;
+}
+
+
 .scale-img{
   height: 70%;
   width: 70%;
@@ -468,6 +500,14 @@ tr, th, td  {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .platinum-container{
+        padding-right: 18rem;
+    }
+    .gold-container{
+        justify-content: center;
+        margin: auto;
+        padding-right: 14rem;
+    }
   nav {
       display: none;
   }
@@ -575,38 +615,51 @@ tr, th, td  {
         width: 100%;
     }
     .scale-img{
-      padding-left: 0;
+      padding-left: 2rem;
     }
     .bronze-sponsors img {
-      display: block;
-      max-width:12.5rem;
-      max-height:6.25rem;
-      width: auto;
-      height: auto;
-    }
-    .silver-sponsors img {
-      display: block;
-      max-width:25rem;
-      max-height:12.5rem;
-      width: auto;
-      height: auto;
-    }
-    .gold-sponsors img {
-      display: block;
-      max-width:60rem;
-      max-height:30rem;
-      width: auto;
-      height: auto;
-    }
+        width: 50%;
+      }
+      .silver-sponsors img {
+        width: 100%;
+      }
+      .gold-sponsors img {
+        width: 180%;
+      }
+      
     .platinum-sponsors img {
-      display: block;
-      max-width:75rem;
-      max-height:37.5rem;
-      width: auto;
-      height: auto;
+        width: 200%;
+    }
+    .gold-container{
+        justify-content: center;
+        margin: auto;
+        padding-right: 12rem;
+    }
+    
+    .platinum-container{
+        justify-content: center;
+        margin: auto;
+        padding-right: 15rem;
+    }
+    
+    .bronze-container{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .silver-container{
+        justify-content: center;
+        margin: auto;
+        padding-right: 4rem;
     }
 }
 @media only screen and (max-width : 767px){
+    .platinum-container{
+        padding-right: 2rem;
+    }
+    .gold-container{
+        padding-right: 2rem;
+    }
     nav {
         display: none;
     }
@@ -629,6 +682,9 @@ tr, th, td  {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
+    }
+    #thankyou-message{
+        font-size: 1.5rem;
     }
     .logo-normal    {
         margin-left: auto;
@@ -722,34 +778,7 @@ tr, th, td  {
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-    }
-    .bronze-sponsors img {
-      display: block;
-      max-width:12.5rem;
-      max-height:6.25rem;
-      width: auto;
-      height: auto;
-    }
-    .silver-sponsors img {
-      display: block;
-      max-width:25rem;
-      max-height:12.5rem;
-      width: auto;
-      height: auto;
-    }
-    .gold-sponsors img {
-      display: block;
-      max-width:60rem;
-      max-height:30rem;
-      width: auto;
-      height: auto;
-    }
-    .platinum-sponsors img {
-      display: block;
-      max-width:75rem;
-      max-height:37.5rem;
-      width: auto;
-      height: auto;
+        padding-right: 2rem;
     }
     .scale-img{
       padding-left: 0;
@@ -759,4 +788,43 @@ tr, th, td  {
     .row button {
         width: 100%;
     }
+
+    .bronze-sponsors img {
+        width: 75%;
+      }
+    .silver-sponsors img {
+    width: 100%;
+    }
+    .gold-sponsors img {
+    width: 180%;
+    }
+    
+    .platinum-sponsors img {
+        width: 200%;
+    }
+
+    .gold-container{
+        justify-content: center;
+        margin: auto;
+        margin-right: 6rem;
+    }
+    
+    .platinum-container{
+        justify-content: center;
+        margin: auto;
+        margin-right: 6rem;
+    }
+    
+    .bronze-container{
+        justify-content: center;
+        margin: auto;
+        margin-right: 2rem;
+    }
+
+    .silver-container{
+        justify-content: center;
+        margin: auto;
+        margin-right: 2rem;
+    }
+
 }
