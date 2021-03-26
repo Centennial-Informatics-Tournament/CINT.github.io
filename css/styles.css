@@ -353,13 +353,6 @@ tr:nth-child(even) {
   background-color: #ed8b3b;
 }
 
-#thankyou-message{
-    color: #b0b7c4;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 2rem;
-}
-
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   background-color: transparent;
@@ -410,7 +403,7 @@ tr:nth-child(even) {
 }
 .bronze-sponsors img {
   display: block;
-  width: 50%;
+  width: 60%;
   height: auto;
   padding: 0;
   margin: 0;
@@ -424,7 +417,7 @@ tr:nth-child(even) {
 }
 .gold-sponsors img {
   display: block;
-  width: 150%;
+  width: 200%;
   height: auto;
   padding: 0;
   margin: 0;
@@ -432,33 +425,35 @@ tr:nth-child(even) {
 
 .platinum-sponsors img {
     display: block;
-    width: 130%;
+    width: 250%;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: auto;
   }
 
 .gold-container{
     justify-content: center;
     margin: auto;
-    padding-right: 10rem;
+    padding-right: 24%;
 }
 
 .silver-container{
     justify-content: center;
     margin: auto;
-    padding-right: 0rem;
+    padding-right: 2%;
 }
 
 .platinum-container{
     justify-content: center;
     margin: auto;
-    padding-right: 15rem;
+    padding-right: 35%;
 }
 
 .bronze-container{
     justify-content: center;
     margin: auto;
+    padding-right: 10%;
+
 }
 
 
@@ -626,7 +621,7 @@ tr, th, td  {
       .gold-sponsors img {
         width: 180%;
       }
-      
+
     .platinum-sponsors img {
         width: 200%;
     }
@@ -635,13 +630,13 @@ tr, th, td  {
         margin: auto;
         padding-right: 12rem;
     }
-    
+
     .platinum-container{
         justify-content: center;
         margin: auto;
         padding-right: 15rem;
     }
-    
+
     .bronze-container{
         justify-content: center;
         margin: auto;
@@ -798,7 +793,7 @@ tr, th, td  {
     .gold-sponsors img {
     width: 180%;
     }
-    
+
     .platinum-sponsors img {
         width: 200%;
     }
@@ -808,13 +803,13 @@ tr, th, td  {
         margin: auto;
         margin-right: 6rem;
     }
-    
+
     .platinum-container{
         justify-content: center;
         margin: auto;
         margin-right: 6rem;
     }
-    
+
     .bronze-container{
         justify-content: center;
         margin: auto;
