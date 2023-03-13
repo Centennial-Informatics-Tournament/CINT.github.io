@@ -1,2 +1,2 @@
-# hocohacks
-Website for hocohacks 2020 virtual
+# CInT
+Website for CInT
