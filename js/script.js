@@ -8,17 +8,15 @@ $(document).ready(function (){
         var scroll = $(window).scrollTop();
         if(scroll > 100){
             $("nav").removeClass("navTransparent");
-            $("nav").addClass("navColor");   
+            $("nav").addClass("navColor");
+            $("footer").removeClass("footer-white");
+            $("footer").addClass("footer-colored");
         }
         else{
             $("nav").removeClass("navColor");
             $("nav").addClass("navTransparent");
+            $("footer").removeClass("footer-colored");
+            $("footer").addClass("footer-white");
         }
-    })
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
     });
 });

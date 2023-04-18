@@ -76,6 +76,7 @@ nav > ul {
 nav > ul > li {
     float: left;
     padding: 1rem;
+    border: 1px solid transparent;
 }
 nav > ul > li:hover {
     border-radius: 1.5rem;
@@ -93,8 +94,9 @@ nav > ul > li > a {
     transition-duration: 0.5s;
     background-color: transparent;
 }
-.navTransparent > ul > li:hover {
-    border: 0.1rem solid white;
+.navTransparent > ul > li:hover, .navTransparent > ul > li.nav-reg {
+    transition-duration: 0.5s;
+    border: 1px solid #FFFFFF;
 }
 .navTransparent > ul > li > a {
     -webkit-transition-duration: 0.5s;
@@ -116,7 +118,7 @@ nav > ul > li > a {
     background-color: #252525;
 }
 .navColor > ul > li:hover {
-    border: 0.1rem solid #ffd156;
+    border: 1px solid #ffd156;
 }
 .navColor > ul > li > a {
     -webkit-transition-duration: 0.5s;
