@@ -54,6 +54,22 @@ html,body {
     margin-left: 1rem;
   }
 
+.live-button {
+    background-color: #ffd156;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1.25rem;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 1.25rem;
+    margin-left: 1rem;
+}
+
 nav {
     position: fixed;
     left: 0;
@@ -717,6 +733,11 @@ tr, th, td  {
     }
 
     .discord-button {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 15rem;
+    }
+    .live-button {
         margin-right: 10px;
         margin-left: 10px;
         margin-bottom: 15rem;
